@@ -1,0 +1,65 @@
+{
+  "name": "Kowshik G",
+  "role": "Software Developer",
+  "tagline": "Computer Science Engineer building diagnostic-grade software — from retinal scans to full-stack apps.",
+  "contact": {
+    "phone": "9597351677",
+    "email": "Kowshik1677@gmail.com",
+    "location": "Tirur, Sevvapet - 602025",
+    "github": "kowshik1677"
+  },
+  "objective": "Motivated Computer Science Engineering student with strong foundations in Python, Web Development, and Machine Learning. Experienced in developing real-world projects using HTML, CSS, JavaScript, React, and Deep Learning techniques. Passionate about building scalable applications and solving complex problems. Seeking a Software Developer role in top tech companies.",
+  "education": [
+    { "school": "Jaya Sakthi Engineering College", "degree": "B.E. Computer Science and Engineering", "years": "2022 – 2026", "score": "70%" },
+    { "school": "K.E.N.C. Govt. Hr. Sec. School, Thiruvallur", "degree": "10th & 12th", "years": "2015 – 2022", "score": "75%" }
+  ],
+  "skills": {
+    "Programming": ["Python"],
+    "Web Technologies": ["HTML5", "CSS3", "JavaScript"],
+    "Frameworks & Tools": ["React", "VS Code", "Flask", "SQLite"],
+    "Enterprise Tools": ["SAP", "MS Excel"],
+    "Soft Skills": ["Problem Solving", "Team Collaboration", "Communication", "Adaptability"]
+  },
+  "projects": [
+    {
+      "name": "Eyesight AI",
+      "subtitle": "Retinal Disease Detection System",
+      "description": "A deep learning-based model that detects retinal diseases from fundus images, focused on early diagnosis and automation in healthcare.",
+      "points": [
+        "Applied image preprocessing and feature extraction techniques",
+        "Improved classification accuracy using optimized neural networks",
+        "Focused on early diagnosis and automation in healthcare"
+      ],
+      "featured": true
+    },
+    {
+      "name": "Employee Management System",
+      "subtitle": "Flask + SQLite Web App",
+      "description": "Full-stack internal tool for managing employee records with a lightweight relational backend.",
+      "points": [
+        "Built REST-style routes with Flask",
+        "Designed relational schema in SQLite",
+        "Deployed and version-controlled on GitHub"
+      ],
+      "featured": false
+    },
+    {
+      "name": "Employee Attendance Tracker",
+      "subtitle": "Flask + SQLite Web App",
+      "description": "A daily attendance logging application with persistent storage and simple reporting views.",
+      "points": [
+        "Session-based attendance logging",
+        "SQLite-backed persistence",
+        "Runs locally via VS Code, deployed to GitHub"
+      ],
+      "featured": false
+    }
+  ],
+  "certifications": [
+    { "title": "Python Full Stack Certification", "issuer": "Accord InfoMatrix, LittleMount" },
+    { "title": "Agentic AI Webinar", "issuer": "Brandmho Academy — Certificate of Participation, July 2026" },
+    { "title": "Industrial Training / Internship Certificate", "issuer": "Jaya Sakthi Engineering College, 04 May 2026 – 16 May 2026" }
+  ],
+  "languages": ["English", "Tamil"],
+  "interests": ["Sports", "Fitness", "Listening to music"]
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kowshik G — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanline-overlay" aria-hidden="true"></div>
+
+<nav class="nav">
+  <span class="nav-mark">EYESIGHT//</span>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-orb" id="orb-canvas"></div>
+  <div class="hero-text">
+    <p class="eyebrow">// fundus_scan.init() — patient: candidate</p>
+    <h1 id="hero-name">Loading<span class="cursor">_</span></h1>
+    <p class="hero-role" id="hero-role"></p>
+    <p class="hero-tagline" id="hero-tagline"></p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#work">View Diagnosis <span aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" id="hero-email" href="#">Contact</a>
+    </div>
+  </div>
+  <div class="hero-readout" id="hero-readout" aria-hidden="true">
+    <span>LAT 13.24°N</span>
+    <span>SCAN OK</span>
+    <span>RES 4096px</span>
+  </div>
+</header>
+
+<main>
+
+  <section class="section" id="objective">
+    <p class="section-label">01 / Diagnostic Summary</p>
+    <p class="objective-text" id="objective-text"></p>
+  </section>
+
+  <section class="section" id="work">
+    <p class="section-label">02 / Case Files</p>
+    <h2 class="section-title">Projects</h2>
+    <div class="project-list" id="project-list"></div>
+  </section>
+
+  <section class="section" id="skills">
+    <p class="section-label">03 / Instrument Panel</p>
+    <h2 class="section-title">Skills</h2>
+    <div class="skill-grid" id="skill-grid"></div>
+  </section>
+
+  <section class="section" id="education">
+    <p class="section-label">04 / Patient History</p>
+    <h2 class="section-title">Education &amp; Certifications</h2>
+    <div class="history-columns">
+      <div class="timeline" id="education-list"></div>
+      <div class="cert-list" id="cert-list"></div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <p class="section-label">05 / Referral</p>
+    <h2 class="section-title">Let's talk</h2>
+    <div class="contact-card">
+      <div class="contact-row" id="contact-email"></div>
+      <div class="contact-row" id="contact-phone"></div>
+      <div class="contact-row" id="contact-location"></div>
+      <div class="contact-row" id="contact-github"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Kowshik G</span>
+  <span>Built with HTML · CSS · JS · Three.js</span>
+</footer>
+
+<script>
+  // Fallback copy of data.json, used only if fetch('data.json') is blocked
+  // (e.g. double-clicking index.html opens it as a file:// URL with no server).
+  // The real source of truth is data.json — edit that file, this stays in sync manually.
+  window.__PORTFOLIO_FALLBACK__ = {
+    "name": "Kowshik G",
+    "role": "Software Developer",
+    "tagline": "Computer Science Engineer building diagnostic-grade software — from retinal scans to full-stack apps.",
+    "contact": { "phone": "9597351677", "email": "Kowshik1677@gmail.com", "location": "Tirur, Sevvapet - 602025", "github": "kowshik1677" },
+    "objective": "Motivated Computer Science Engineering student with strong foundations in Python, Web Development, and Machine Learning. Experienced in developing real-world projects using HTML, CSS, JavaScript, React, and Deep Learning techniques. Passionate about building scalable applications and solving complex problems. Seeking a Software Developer role in top tech companies.",
+    "education": [
+      { "school": "Jaya Sakthi Engineering College", "degree": "B.E. Computer Science and Engineering", "years": "2022 – 2026", "score": "70%" },
+      { "school": "K.E.N.C. Govt. Hr. Sec. School, Thiruvallur", "degree": "10th & 12th", "years": "2015 – 2022", "score": "75%" }
+    ],
+    "skills": {
+      "Programming": ["Python"],
+      "Web Technologies": ["HTML5", "CSS3", "JavaScript"],
+      "Frameworks & Tools": ["React", "VS Code", "Flask", "SQLite"],
+      "Enterprise Tools": ["SAP", "MS Excel"],
+      "Soft Skills": ["Problem Solving", "Team Collaboration", "Communication", "Adaptability"]
+    },
+    "projects": [
+      { "name": "Eyesight AI", "subtitle": "Retinal Disease Detection System", "description": "A deep learning-based model that detects retinal diseases from fundus images, focused on early diagnosis and automation in healthcare.", "points": ["Applied image preprocessing and feature extraction techniques", "Improved classification accuracy using optimized neural networks", "Focused on early diagnosis and automation in healthcare"], "featured": true },
+      { "name": "Employee Management System", "subtitle": "Flask + SQLite Web App", "description": "Full-stack internal tool for managing employee records with a lightweight relational backend.", "points": ["Built REST-style routes with Flask", "Designed relational schema in SQLite", "Deployed and version-controlled on GitHub"], "featured": false },
+      { "name": "Employee Attendance Tracker", "subtitle": "Flask + SQLite Web App", "description": "A daily attendance logging application with persistent storage and simple reporting views.", "points": ["Session-based attendance logging", "SQLite-backed persistence", "Runs locally via VS Code, deployed to GitHub"], "featured": false }
+    ],
+    "certifications": [
+      { "title": "Python Full Stack Certification", "issuer": "Accord InfoMatrix, LittleMount" },
+      { "title": "Agentic AI Webinar", "issuer": "Brandmho Academy — Certificate of Participation, July 2026" },
+      { "title": "Industrial Training / Internship Certificate", "issuer": "Jaya Sakthi Engineering College, 04 May 2026 – 16 May 2026" }
+    ],
+    "languages": ["English", "Tamil"],
+    "interests": ["Sports", "Fitness", "Listening to music"]
+  };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
